@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "mermaid": "9.1.0",
+    "vitepress": "^1.0.0-beta.3",
+    "vitepress-plugin-mermaid": "^2.0.10"
+  }
+}
