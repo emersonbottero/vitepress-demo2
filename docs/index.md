@@ -18,8 +18,8 @@ flowchart TD
 ```
 
 ![](/K.png)
-<!-- <img src='/K.png' width='60' > -->
----
+
+## <!-- <img src='/K.png' width='60' > -->
 
 ```mermaid
 graph LR;
@@ -49,6 +49,7 @@ timeline
     2005 : Youtube
     2006 : Twitter
 ```
+
 ```mermaid
 gantt
     title A Gantt Diagram
@@ -72,10 +73,19 @@ Root
 ```mermaid
 zenuml
     title Annotators
-    @Actor Alice
+    @CloudWatch Alice
     @Database Bob
     Alice->Bob: Hi Bob
     Bob->Alice: Hi Alice
+```
+
+```mermaid
+sankey-beta
+
+%% source,target,value
+Electricity grid,Over generation / exports,104.453
+Electricity grid,Heating and cooling - homes,113.726
+Electricity grid,H2 conversion,27.14
 ```
 
 <style>

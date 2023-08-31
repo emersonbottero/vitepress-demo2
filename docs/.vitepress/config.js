@@ -1,8 +1,20 @@
 import { withMermaid } from "vitepress-plugin-mermaid";
+import { SearchPlugin } from "vitepress-plugin-search";
 
 export default withMermaid({
   title: "Vitepress",
   description: "Just playing around.",
+  mermaid: {
+    externalDiagrams: [await import("@mermaid-js/mermaid-zenuml")],
+    theme: "forest",
+    gantt: {
+      titleTopMargin: 25,
+      barHeight: 10,
+      barGap: 40,
+      topPadding: 75,
+      sidePadding: 75,
+    }
+  },
   themeConfig: {
     siteTitle: false,
     sidebar: [
@@ -20,4 +32,7 @@ export default withMermaid({
       },
     ],
   },
+  vite: {
+    plugins: [SearchPlugin()]
+  }
 });

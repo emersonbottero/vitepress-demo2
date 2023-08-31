@@ -1,8 +1,3 @@
----
-mermaidTheme: forest
-title: Docs with VitePress
----
-
 <script setup>
 import {ref} from 'vue'
 const total = ref(0)
