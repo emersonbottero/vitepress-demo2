@@ -17,18 +17,18 @@ flowchart TD
   Start --> Stop
 ```
 
-![](/K.png)
 
 ## <!-- <img src='/K.png' width='60' > -->
 
 ```mermaid
 graph LR;
-    K([<img src='/K.png' width='60' >])-.->G((<img id='git' src='/Octocat.png' width='50' >));
+    K([<img src='/K.png' width='60' >])-.->G(<img id='git' src='/Octocat.png' width='50' >);
     H([<img id='helm' src='/helm.png' width='60' >])-.->G
     G-->A;
-    A(<img src='/argo-cd.png' width='60' >)-->D(<img src='/ocp.png' width='60' > ..);
-%%classDef img fill:none,color:none,stroke:none,border-radius:50px
+    A((<img src='/argo-cd.png' width='60' >))-->D((<img src='/ocp.png' width='50' >));
+%%classDef img fill:none,color:none,stroke:none,border-radius:50%:,border: none
 %%class G,D,A,K,H img
+
 click G "http://www.github.com" "This is a link" _blank
 click K "https://kustomize.io/" _blank
 ```
@@ -89,12 +89,9 @@ Electricity grid,H2 conversion,27.14
 ```
 
 <style>
-  #git {
-    border-radius: 50px;
-  }
 
   #helm,
-  .dark #git{
+   #git{
     transform: scale(1.5);
   }
 

@@ -1,11 +1,9 @@
 import { withMermaid } from "vitepress-plugin-mermaid";
-import { SearchPlugin } from "vitepress-plugin-search";
 
 export default withMermaid({
   title: "Vitepress",
   description: "Just playing around.",
   mermaid: {
-    externalDiagrams: [await import("@mermaid-js/mermaid-zenuml")],
     theme: "forest",
     gantt: {
       titleTopMargin: 25,
@@ -31,8 +29,5 @@ export default withMermaid({
         items: [{ text: "Get forms", link: "/forms/" }],
       },
     ],
-  },
-  vite: {
-    plugins: [SearchPlugin()]
   }
 });

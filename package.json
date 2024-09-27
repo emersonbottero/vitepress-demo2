@@ -6,11 +6,8 @@
     "serve": "vitepress preview docs"
   },
   "devDependencies": {
-    "@mermaid-js/mermaid-mindmap": "^9.3.0",
-    "@mermaid-js/mermaid-zenuml": "^0.1.2",
-    "mermaid": "^10.3.0",
-    "vitepress": "^1.0.0-rc.4",
-    "vitepress-plugin-mermaid": "^2.0.14",
-    "vitepress-plugin-search": "^1.0.4-alpha.20"
-  }
+    "mermaid": "^11.0.0",
+    "vitepress": "^1.0.0"
+  },
+  "dependencies": {}
 }
