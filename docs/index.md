@@ -88,6 +88,17 @@ Electricity grid,Heating and cooling - homes,113.726
 Electricity grid,H2 conversion,27.14
 ```
 
+```mermaid
+   erDiagram
+      accTitle: My Entity Relationship Diagram
+      accDescr: My Entity Relationship Diagram Description
+
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+
+```
+
 <style>
 
   #helm,
