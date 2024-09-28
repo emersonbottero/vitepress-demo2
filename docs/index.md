@@ -12,6 +12,17 @@ Be careful once you close the window with token you are not able to see it again
 
 :::
 
+```css
+t {
+  width: 30px;
+}
+```
+
+```mmd
+flowchart TD
+  Start --> Stop
+```
+
 ```mermaid
 flowchart TD
   Start --> Stop
